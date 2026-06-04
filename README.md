@@ -57,6 +57,23 @@ Solving for ε_r:
  - Dielectric samples (paper, cardboard, plastic)
 ## Software
 
+### Arduino Sketch
+Uses a digital input pin to measure the full period of the 555 output square 
+wave using pulseIn(). Calculates frequency from the period, then derives 
+capacitance using the 555 timing equation and dielectric constant using the 
+parallel plate capacitor equation. Outputs all three values over serial at 
+9600 baud every 500ms.
+
+### Pyton Script
+Establishes a serial connection with the Arduino over USB and continuously 
+reads frequency, capacitance, and dielectric constant values in real time. 
+Stores all readings in lists and upon termination plots three separate graphs 
+using matplotlib. 
+
+**Libraries used:**
+- pyserial — serial communication with Arduino
+- matplotlib — data plotting
+- time — serial connection delay on startup
 ## Results
 
 ## How to Run
