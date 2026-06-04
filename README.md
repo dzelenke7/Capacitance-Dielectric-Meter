@@ -21,6 +21,9 @@ Solve for the time to reach 2/3Vcc
 Set V(t) = 2/3Vcc
 
 2/3Vcc = Vcc - 2/3Vcc * e(-t/tau)
+Set V(t) = 2/3Vcc
+
+2/3Vcc = Vcc - 2/3Vcc * e(-t/tau)
 2/3Vcc - Vcc = -2/3Vcc * e(-t/tau)
 -1/3Vcc = -2/3Vcc * e(-t/tau)
 1/2 = e(-t/tau)
