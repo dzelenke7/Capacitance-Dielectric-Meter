@@ -27,7 +27,7 @@ Set V(t) = 2/3Vcc
 -t/tau = ln(1/2) --->
 -t/tau = -ln(2) --->
 t = ln(2) * tau --->
-t = 0.693 * tau --->
+t = 0.693 * tau 
 
 This gives the charge and discharge times of:
  - t_charge = 0.693 * (R1 + R2) * C
@@ -46,8 +46,15 @@ C = (ε_r)((ε_0) * A/d
 Solving for ε_r:
 ε_r = C/((ε_0) * A/d)
 
-## Hardware
-
+## Hardware 
+ - Arduino Uno
+ - 1k Ohm Resistor
+ - 100k Ohm Resistor
+ - 750k Ohm Resistor
+ - 555 timing chip
+ - 10nF Capacitor
+ - 91.3pF timing Capacitor (4'' x 4'' Tin Foil capacitor with 1mm of seperation with cardboard, serves as the unknown capacitor under test)
+ - Dielectric samples (paper, cardboard, plastic)
 ## Software
 
 ## Results
