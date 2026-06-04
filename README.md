@@ -33,14 +33,17 @@ This gives the charge and discharge times of:
  - t_charge = 0.693 * (R1 + R2) * C
  - t_discharge = 0.693 * R2 * C
  - t_tot = 0.693 * (R1 + 2R2) * C
+ - f = 1.44/((R1+2R2) * C)
    
-### Capacitance equation, using frequency;
-f = 1.44/((R1+2R2) * C)
-f * ((R1+2R2) * C) = 1.44
+### Capacitance equation, using frequency
+Rearranging the timing equation:
 C = 1.44/((R1+2R2) * f)
 
-### Dielectric Constant equation, using Capacitance;
+### Dielectric Constant equation, using Capacitance
+Using the parallel plate capacitor equation:
 C = (ε_r)((ε_0) * A/d
+
+Solving for ε_r:
 ε_r = C/((ε_0) * A/d)
 
 ## Hardware
