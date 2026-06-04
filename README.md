@@ -20,17 +20,14 @@ V(t) = Vcc - 2/3Vcc * e(-t/tau)
 Solve for the time to reach 2/3Vcc
 Set V(t) = 2/3Vcc
 
-2/3Vcc = Vcc - 2/3Vcc * e(-t/tau)
-Set V(t) = 2/3Vcc
-
-2/3Vcc = Vcc - 2/3Vcc * e(-t/tau)
-2/3Vcc - Vcc = -2/3Vcc * e(-t/tau)
--1/3Vcc = -2/3Vcc * e(-t/tau)
-1/2 = e(-t/tau)
--t/tau = ln(1/2)
--t/tau = -ln(2)
-t = ln(2) * tau
-t = 0.693 * tau
+2/3Vcc = Vcc - 2/3Vcc * e(-t/tau) --->
+2/3Vcc - Vcc = -2/3Vcc * e(-t/tau) --->
+-1/3Vcc = -2/3Vcc * e(-t/tau) --->
+1/2 = e(-t/tau) --->
+-t/tau = ln(1/2) --->
+-t/tau = -ln(2) --->
+t = ln(2) * tau --->
+t = 0.693 * tau --->
 
 This gives the charge and discharge times of:
  - t_charge = 0.693 * (R1 + R2) * C
