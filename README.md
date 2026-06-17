@@ -85,4 +85,31 @@ values against nominal values, along with percent error for each capacitor.
 
 ![Measured vs Nominal Capacitance](results_chart.png)
 
+A clear pattern emerged across the tested range: error was highest at both 
+extremes and lowest near the circuit's designed operating frequency. The 47pF 
+capacitor operates at roughly 42kHz, while the 1000pF capacitor operates at 
+roughly 200Hz, both approaching the practical limits of the pulseIn() 
+function used for timing. Capacitors operating in the 3-9kHz range, closer to 
+the resistor values' designed target frequency, produced the most accurate 
+readings.
+
+At high frequencies, the signal period becomes comparable in magnitude to 
+pulseIn()'s own function call overhead (roughly 1-3 microseconds), causing 
+that overhead to make up a significant fraction of the measured time and 
+introducing error. At low frequencies, the much longer measurement window 
+gives more time for circuit noise, 555 non-idealities, and breadboard 
+parasitics to perturb the threshold-crossing timing, reducing accuracy in the 
+opposite direction.
 ## How to Run
+
+### 555 timer Wiring
+Pin 1: GND
+Pin 2: Intersection of unknown Capacitor & 750k Resistor
+Pin 3: Pin 2 of Arduino Uno & Load 1k resistor --> GND
+Pin 4: 5V VCC
+Pin 5: 5V VCC --> 100k Resistor
+Pin 6: Intersection of 100k Resistor & 750k Resistor
+Pin 7: Intersection of unknown Capacitor & 750k Resistor
+Pin 8: 10nF Capacitor --> GND
+
+![LTSpice Sketch](
