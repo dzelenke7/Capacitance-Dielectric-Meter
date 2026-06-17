@@ -83,6 +83,6 @@ using the timing equation. Readings were logged via a Python serial script,
 and a second Python script generated comparison bar charts plotting measured 
 values against nominal values, along with percent error for each capacitor.
 
-![Measured vs Nominal Capacitance](results_chart)
+![Measured vs Nominal Capacitance](results_chart.png)
 
 ## How to Run
