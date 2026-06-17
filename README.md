@@ -142,7 +142,7 @@ opposite direction.
    nominal vs measured capacitance values, and another showing percent error 
    for each capacitor tested.
 
-## Limitations & Future Work
+## Limitations
 
 The original goal of this project included characterizing the dielectric 
 constant of real materials (paper, cardboard, plastic) using a hand-built 
