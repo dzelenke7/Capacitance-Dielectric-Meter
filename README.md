@@ -74,6 +74,15 @@ using matplotlib.
 - pyserial — serial communication with Arduino
 - matplotlib — data plotting
 - time — serial connection delay on startup
+
 ## Results
+To validate the meter's accuracy, I tested 7 capacitors with known nominal 
+values ranging from 47pF to 1000pF. For each capacitor, the Arduino measured 
+the 555 oscillator's period, calculated frequency, and derived capacitance 
+using the timing equation. Readings were logged via a Python serial script, 
+and a second Python script generated comparison bar charts plotting measured 
+values against nominal values, along with percent error for each capacitor.
+
+![Measured vs Nominal Capacitance](results_chart)
 
 ## How to Run
